@@ -56,6 +56,6 @@ foutput.truncate(0)
 foutput.close()
 for i in range(0,5):
         testchar = list(charfrequencysorted.keys())[i]
-        shift = alphabet.index(str(testchar)) - alphabet.index('e')
-        print(-shift)
-        decrypt(-shift)
+        shift = alphabet.index('e') - alphabet.index(str(testchar))
+        print(shift)
+        decrypt(shift)
