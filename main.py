@@ -27,8 +27,8 @@ def switch2():
         switch2()
 
 def switch1():
-    print("1. Encrypt\n")
-    print("2. Decrypt\n")
+    print("1. Encrypt")
+    print("2. Decrypt")
     choice = int(input())
     if choice == 1:
         print("under work"),
@@ -39,5 +39,5 @@ def switch1():
         switch1()
 
 
-print("MARKSUS\n")
+print("MARKSUS")
 switch1()
