@@ -1,12 +1,13 @@
 alphabets = 'abcdefghijklmnopqrstuvwxyz'
 
 
-def dictVerify(dcipher):
+def dictVerify(dcipher, shift):
     filename = 'C:\\Users\\jagat\\PycharmProjects\\Marksus\\dictionary\\%s.txt' % dcipher[0]
     with open(filename, 'r') as file:
         for line in file.readlines():
                 if dcipher in line and len(line)-1 == len(dcipher):
                     print("The Encrypted Word is : %s" % dcipher)
+                    print("Shift is : ", shift)
     return
 
 def wordshift(cipherword):
@@ -24,4 +25,21 @@ def wordshift(cipherword):
 
             else:
                 translated = translated + char
-        dictVerify(translated)
+        dictVerify(translated,i)
+
+
+def encrypt():
+    text = input("Enter Text: ")
+    shift = int(input("Enter Shift: "))
+    result = ""
+    for i in range(len(text)):
+        char = text[i]
+
+        if (char.isupper()):
+            result += chr((ord(char) + shift - 65) % 26 + 65)
+
+        else:
+            result += chr((ord(char) + shift - 97) % 26 + 97)
+
+    print("Cipher: " + result)
+    return

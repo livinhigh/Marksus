@@ -1,6 +1,6 @@
 from wordcrypt import wordshift
 from filecrypt import readfile
-
+from wordcrypt import encrypt
 
 def filecall():
     print("File Path : ")
@@ -31,13 +31,18 @@ def switch1():
     print("2. Decrypt")
     choice = int(input())
     if choice == 1:
-        print("under work"),
+        encrypt()
     elif choice == 2:
         switch2()
     else:
         print("Oops wrong choice")
         switch1()
 
-
-print("MARKSUS")
+print(".___  ___.      ___      .______       __  ___      _______. __    __       _______.")
+print("|   \/   |     /   \     |   _  \     |  |/  /     /       ||  |  |  |     /       |")
+print("|  \  /  |    /  ^  \    |  |_)  |    |  '  /     |   (----`|  |  |  |    |   (----`")
+print("|  |\/|  |   /  /_\  \   |      /     |    <       \   \    |  |  |  |     \   \    ")
+print("|  |  |  |  /  _____  \  |  |\  \----.|  .  \  .----)   |   |  `--'  | .----)   |   ")
+print("|__|  |__| /__/     \__\ | _| `._____||__|\__\ |_______/     \______/  |_______/    ")
+print("                                                                                    ")
 switch1()
