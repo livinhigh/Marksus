@@ -3,8 +3,7 @@ from filecrypt import readfile
 from wordcrypt import encrypt
 
 def filecall():
-    print("File Path : ")
-    path = input()
+    path = input("File Path : ")
     readfile(path)
 
 def wordcall():

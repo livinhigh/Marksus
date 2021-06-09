@@ -6,8 +6,8 @@ charfrequency = {}
 charfrequencysorted = {}
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
-def decrypt(shift):
-    finput = open ("filename.txt", "r")
+def decrypt(shift, path):
+    finput = open (path, "r")
     inputstr = finput.read()
     outputstr = ''
     for i in range(len(inputstr)):
@@ -23,11 +23,12 @@ def decrypt(shift):
     foutput.write('\n')
     foutput.write(outputstr)
     foutput.write('\n')
+    print("\nFor Shift : ",shift)
+    print(outputstr)
     return
 
 
 def freqDictionary(charfrequency):
-    print(charfrequency)
     total=0
     for i in charfrequency:
         total += charfrequency[i]
@@ -42,7 +43,6 @@ def readfile(path):
     charStream = fileObj.read()
     charStream = charStream.lower()
     charStream = re.sub("[^a-z]","",charStream,0, re.MULTILINE )
-    print(charStream)
     for char in  charStream:
         if char in charfrequency:
              charfrequency[char] += 1
@@ -55,8 +55,7 @@ def readfile(path):
     for i in range(0, 5):
         testchar = list(charfrequencysorted.keys())[i]
         shift = alphabet.index('e') - alphabet.index(str(testchar))
-        print(shift)
-        decrypt(shift)
+        decrypt(shift, path)
 
 
 
