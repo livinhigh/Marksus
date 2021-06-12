@@ -1,10 +1,14 @@
 from wordcrypt import wordshift
 from filecrypt import readfile
 from wordcrypt import encrypt
-
+from tkinter import filedialog as fd
 def filecall():
-    path = input("File Path : ")
-    readfile(path)
+    try:
+        print("CHOOSE YOUR FILE")
+        path = fd.askopenfilename()
+        readfile(path)
+    except:
+        print("No file choosen")
 
 def wordcall():
     print("Encrypted Word : ")
@@ -22,7 +26,7 @@ def switch2():
     elif choice2 == 2:
         wordcall()
     else:
-        print("Oops wring choice")
+        print("Oops wrong choice")
         switch2()
 
 def switch1():
@@ -44,4 +48,5 @@ print("|  |\/|  |   /  /_\  \   |      /     |    <       \   \    |  |  |  |   
 print("|  |  |  |  /  _____  \  |  |\  \----.|  .  \  .----)   |   |  `--'  | .----)   |   ")
 print("|__|  |__| /__/     \__\ | _| `._____||__|\__\ |_______/     \______/  |_______/    ")
 print("                                                                                    ")
-switch1()
+print("------------------------------------------------------------------------------------")
+#switch1()

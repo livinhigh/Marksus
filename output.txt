@@ -1,10 +1,10 @@
-Shift : 2
-Sepd pda Ywaown yeldan ajynulpejc w patp iqhpelha peiao lnkrezao jk wzzepekjwh oayqnepu Pdeo eo xaywqoa psk ajynulpekjo kb owu odebp W wjz odebp X sehh xa
-Shift : -9
-Htes esp Nlpdlc ntaspc pyncjaetyr l epie xfwetawp etxpd aczgtopd yz lootetzylw dpnfctej Estd td mpnlfdp ehz pyncjaetzyd zq dlj dstqe L lyo dstqe M htww mp
-Shift : -20
-With the Caesar cipher encrypting a text multiple times provides no additional security This is because two encryptions of say shift A and shift B will be
-Shift : -8
-Iuft ftq Omqemd oubtqd qzodkbfuzs m fqjf ygxfubxq fuyqe bdahupqe za mppufuazmx eqogdufk Ftue ue nqomgeq fia qzodkbfuaze ar emk eturf M mzp eturf N iuxx nq
-Shift : -16
-Amxl xli Geiwev gmtliv irgvctxmrk e xibx qypxmtpi xmqiw tvszmhiw rs ehhmxmsrep wigyvmxc Xlmw mw figeywi xas irgvctxmsrw sj wec wlmjx E erh wlmjx F ampp fi
+Shift : 0
+
+Shift : -15
+Dstqe    
+Shift : -11
+Hwxui    Hwxui   Shift     
+Shift : -4
+Odebp    Odebp   Zopma     Odebp   Dstqe    Dstqe   Odebp      
+Shift : 4
+Wlmjx    Wlmjx   Hwxui     Wlmjx   Labym    Labym   Wlmjx      Wlmjx   Shift    Shift   Dstqe     Shift   Hwxui    Hwxui   Shift       

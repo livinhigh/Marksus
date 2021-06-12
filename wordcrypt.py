@@ -2,7 +2,7 @@ alphabets = 'abcdefghijklmnopqrstuvwxyz'
 
 
 def dictVerify(dcipher, shift):
-    filename = 'C:\\Users\\jagat\\PycharmProjects\\Marksus\\dictionary\\%s.txt' % dcipher[0]
+    filename = 'dictionary/%s.txt' % dcipher[0]
     with open(filename, 'r') as file:
         for line in file.readlines():
                 if dcipher in line and len(line)-1 == len(dcipher):
@@ -28,9 +28,13 @@ def wordshift(cipherword):
         dictVerify(translated,i)
 
 
-def encrypt():
-    text = input("Enter Text: ")
-    shift = int(input("Enter Shift: "))
+def encrypt(word="", shift=0):
+    if(word==""):
+        text = input("Enter Text: ")
+        shift = int(input("Enter Shift: "))
+    else:
+        text=word
+        shift=int(shift)
     result = ""
     for i in range(len(text)):
         char = text[i]
